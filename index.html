@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shohjahonning Portfeli - Web Developer</title>
+    <meta name="description" content="Shohjahon - Professional Web Developer specializing in modern web technologies">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-text">Shohjahon.uz</div>
+            </div>
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <p class="loading-text">Yuklanmoqda...</p>
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="customCursor" class="custom-cursor"></div>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Shohjahon.uz</div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="#home">Bosh sahifa</a>
+                    <a href="#about">Men haqimda</a>
+                    <a href="#skills">Malakalar</a>
+                    <a href="#sponsors">Homiylar</a>
+                    <a href="#contact">Aloqa</a>
+                </nav>
+
+                <div class="header-controls">
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                        <span class="sun-icon"><img src="logo/sun-icon.jpg" alt="" height="35px" style="margin-top: 9px;"></span>
+                        <span class="moon-icon">🌙</span>
+                    </button>
+                    <button id="mobileMenuToggle" class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Sidebar -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="mobile-menu-backdrop"></div>
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <div class="logo">Shohjahon.uz</div>
+            </div>
+            <nav class="mobile-nav">
+                <a href="#home">Bosh sahifa</a>
+                <a href="#about">Men haqimda</a>
+                <a href="#skills">Malakalar</a>
+                <a href="#sponsors">Homiylar</a>
+                <a href="#contact">Aloqa</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="floating-logos">
+                    <div class="floating-logo" data-lang="HTML5">
+                        <div class="logo-card html">HTML5</div>
+                    </div>
+                    <div class="floating-logo" data-lang="CSS3">
+                        <div class="logo-card css">CSS3</div>
+                    </div>
+                    <div class="floating-logo" data-lang="JS">
+                        <div class="logo-card js">JS</div>
+                    </div>
+                    <div class="floating-logo" data-lang="React">
+                        <div class="logo-card react">React</div>
+                    </div>
+                    <div class="floating-logo" data-lang="Python">
+                        <div class="logo-card python">Python</div>
+                    </div>
+                    <div class="floating-logo" data-lang="TS">
+                        <div class="logo-card typescript">TS</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <!-- Developer Avatar -->
+                    <div class="developer-avatar">
+                        <div class="avatar-container">
+                            <div class="avatar-bg"></div>
+                            <div class="avatar-image">
+                                <img src="logo/my_photo.jpg" alt="" height="35px" style="margin-top: 9px;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Title -->
+                    <h1 class="hero-title">Sherzodov Shohjahon</h1>
+
+                    <!-- Subtitle -->
+                    <p class="hero-subtitle">Men web dasturlash va dizaynni sevaman</p>
+
+                    <!-- Description -->
+                    <p class="hero-description">
+                        Zamonaviy web texnologiyalar yordamida chiroyli va funksional veb-saytlar yarataman. 
+                        React, TypeScript va zamonaviy front-end texnologiyalar bo'yicha tajribaga egaman.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">Men haqimda</a>
+                        <a href="#contact" class="btn btn-secondary">Bog'lanish</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Men haqimda</h2>
+                    <p class="section-description">
+                        Web dasturlash sohasida faol bo'lib, zamonaviy texnologiyalar yordamida 
+                        foydalanuvchilarga qulay va chiroyli veb-saytlar yarataman.
+                    </p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Professional Web Developer</h3>
+                        <p>
+                            Men Shohjahon. Web dasturlash sohasida 1+ yillik tajribaga egaman. 
+                            Asosan HTML, CSS, JS va zamonaviy front-end texnologiyalar bilan ishlayman. 
+                            Har bir loyihada foydalanuvchi tajribasini yaxshilash va zamonaviy dizayn 
+                            tamoyillarini qo'llashga e'tibor beraman.
+                        </p>
+                        <p>
+                            Mening maqsadim - mijozlarning g'oyalarini hayotga tatbiq etish va 
+                            ularga eng yaxshi web yechimlari taqdim etish. Har doim yangi texnologiyalarni 
+                            o'rganish va o'z bilimlarimni rivojlantirishga harakat qilaman.Hozirda "Python" 
+                            dasturlash tilini o`rganib kelmoqdaman.
+                        </p>
+                    </div>
+
+                    <div class="about-features">
+                        <div class="feature-card">
+                            <div class="feature-icon"><img src="logo/computer.png" alt="" height="35px" style="margin-top: 9px;"></div>
+                            <h4>Clean Code</h4>
+                            <p>Toza va samarali kod yozish</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎨</div>
+                            <h4>Modern Design</h4>
+                            <p>Zamonaviy va chiroyli dizayn</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h4>Fast Performance</h4>
+                            <p>Tez yuklanadigan saytlar</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon"><img src="logo/users.png" alt="" height="35px" style="margin-top: 9px;"></div>
+                            <h4>User Experience</h4>
+                            <p>Foydalanuvchi tajribasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My skills</h2>
+                    <p class="section-description">
+                        Web dasturlash sohasida ishlatadigan texnologiyalar va vositalar
+                    </p>
+                </div>
+
+                <div class="skills-content">
+                    <div class="skill-category">
+                        <h3>Dasturlash tilllari</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="65"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-percentage">98%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="98"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Tools & Others</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Figma</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Typescript</span>
+                                    <span class="skill-percentage">55%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="55"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Responsive Design</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="additional-skills">
+                    <h3>Boshqa texnologiyalar</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">SASS</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">jQuery</span>
+                        <span class="tech-tag">PHP</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors Section -->
+        <section id="sponsors" class="sponsors">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="heart-icon">❤️</span>
+                        Homiylar
+                        <span class="heart-icon">❤️</span>
+                    </h2>
+                    <p class="section-description">
+                        Mening ishlarimni qo'llab-quvvatlovchi va hamkorlik qiluvchi kompaniyalar
+                    </p>
+                </div>
+
+                <div class="sponsors-slider">
+                    <div class="slider-container">
+                        <div class="slides-wrapper" id="slidesWrapper">
+                            <!-- Sponsor 1 -->
+                            <div class="slide active">
+                                <div class="sponsor-content">
+                                    <div class="sponsor-logo">
+                                        <img src="https://api.logobank.uz/media/logos_png/IT_park-01.png" alt="IT park logo">
+                                        <div class="premium-badge">
+                                            <span>🏆</span>
+                                            Premium
+                                        </div>
+                                    </div>
+                                    <div class="sponsor-info">
+                                        <h3>IT Park</h3>
+                                        <p class="sponsor-category">Technology</p>
+                                        <p class="sponsor-description">Texnologik yechimlarda yetakchi kompaniya</p>
+                                        <div class="sponsor-stats">
+                                            <div class="stat">
+                                                <span>⭐</span>
+                                                <span>5/5 reyting</span>
+                                            </div>
+                                            <div class="stat">
+                                                <span>👥</span>
+                                                <span>100+ loyiha</span>
+                                            </div>
+                                        </div>
+                                        <a href="https://it-park.uz/" class="sponsor-link">Saytga o'tish →</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sponsor 2 -->
+                            <div class="slide">
+                                <div class="sponsor-content">
+                                    <div class="sponsor-logo">
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QEBUPEhEQEBAVFRUXFxYXEhYXERYYFxYXFhUbGhYYHiggGRomGxoVIzEtJSkrLi4yGCAzRDMsOCgtLisBCgoKDg0OGxAQGzUlHyUtLS0vMDUxOCs3LjUvNzYtLS8vLTUtLS0vLy02LS0tLTItNS8tLS0tLS0tNy0tLTUtL//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABgcFCAEDBAL/xABQEAABAwIDBAMKCQcJCQEAAAABAAIDBBEFEiEGBxMxQVFhIjVScXN0gZGhsxQWMjRylLGy0kJVYpKTwcIIJTNDU1SCotEVI3WDtMPh8PEk/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAECBAMFBv/EACoRAQACAgEDAgUEAwAAAAAAAAABAgMRBBIhMRNBBSJRYYFxkaGxMsHh/9oADAMBAAIRAxEAPwC8UREBERAREQEREBERAREQEREBERAREQEREBcXXK+cgvfpQfSIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIi+JH2F7F3YLX9qD7RRfA9pJJ6yqp3UlVG2J8YD3NaGkGNpOubruRa+hHLkpQEBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARcOvbTmsTgbKwOm+EPhc3jO4eRjmnh2blvmcdeaDJxxBpc4c3EE+gAfYAuxcOvbTmsVgrKwOm+EPhc3inh5GOB4eVtr5nHW90GWRcXXyyRp0BBI52PJB9oiICIiAiIgIiICIiAiIgLxYli1NTBpqJ4acONmmSRrA49QLiLle1VL/KF+b0nln+7KC1oJ2PaHsc17Tyc0gtPiIXYtSsAx6roJOLSyuiN7lo1if2PZyd9o6CFsbu/wBsYsVp+IAI547NmjvfKTycOksdY2PYRzCJ0lC81fiEFO3PNLFCzwpHtY31uICgW9PeGcPHwSmyurHtzFxF2wtPIkcnPOtgdBzPQHUPiFXLUSGeaR80p+U57i51uwnk3sGgQ02f+O2EfnGg+sxfiT47YR+caD6zF+JasLkC2p9A6/8AwhptN8dsI/OND9Zi/Enx2wj840H1mL8S1YJvqvqGFzzZrS49gv8A/EiNpik2nUNpfjthH5xoPrMX4k+O2EfnGg+sxfiWtUOCyH5RawfrH2ae1Z3BdkJKg2hhknPSeUYPa7Ro9JXaMFp7z2elj+Eci1eu8RWv1tOv+r5ZtphJNhiFCT2VMZ/iXhxLeHhcAP8Av+KeqJpeD/j+R/mUSwndgGFgqqiOHObNiiy53G2awc4WJsCSA08uanuDbJ0FJYxU7M4/Ld3cnoc65HosmsVfM7/Rny4+Pj7Rfqn7do/eWEg2vxCq+Z4ZLkP9bUPETB25bd0PokrIwYbi0ovUVsVPfmylhbf9rOHfdCktlyqzePaNfyy9X0hioMAgFy/i1BPPjSvlHoY45G+hoWTjjDRYAADkALD1L6RUmdqiIigEREBERAREQEREBERAVS/yhfm9J5Z/uyraVS/yhfm9J5Z/uygpNTLdDirqfFoRe0c4fE8dFspe0+MOa30E9ahqkG7wfztR+Xb9hRZicYxV1XUS1bz3U0jn69AJ7lv+FuVvoXkDwNQR61tlPhOHxtL309IxgGrnRRhoHaSLBQ7GtpMMju2no6ad/hGFjYvu3d7AetXpjtedVhalbW8QoIAHXS/g9fb4l76XBZ5NSOGOt2h/V5/Yp3WVTpnB7mxNIOgjiYxo6NA0a+m5WfwbYiqqLPePg8Z6Xjuz4mc/Xb0rXHFrSN5Zda0pX/OVd0+Aws1deQ9ujf1R++6l+CbE1lSBljEEXhSDKLfos+UfUB2rNYhtHgWDEtjHw6sbp3Ja8tcPCk+RH4mgu7Curd1t5W4rij4phHHTfBpXCFjbi4kiaC57tXGznDoGvJUtyK17Y401V+I+lGsNYj7vmtZs/hF/hU/w2qbzibZxBtyMQOVn/McsNUby8VxB3wbCqXgN5DhsEsoHRdxHCiHjGnhK5BgNF/dab9jH/ovdFCxgyta1reoAAeoLNa9rTuZYs3Iy5p3ktMoTu92Jko3Ora2V1TiMjcpc57niJh1LGudqTfmeXQBa5M5RFVxEREBERAREQEREBERAREQEREBERAVS/wAoX5vSeWf7sq2lU+/domZSwteziNkc9zb901pYQCRzsTyUxEzOodMWK+S0UpG5lSCkWytPNT1MVXYAxOzta693EA2uByGvjXbQ0EcWoGZ3hHn6OpZ/AsIqKuThwxl9uZ5Rt+k7o8XM9AWzHxoiN3fQU+DVw09TkT+Pb8y9OKYxUVTs88hf0hvKNviaNB4+fasts/slVVdn24UR/rHjmP0W83ewdqmmzmw1PT2kltUTc7kf7tp/RZ0+M+xS2ym/KisdOOHlcnlVn5cfhhcD2XpaSzmtzy/2j9X+job6Paqs357QVkdWyijnfHTup2SOYw5c7nSStOZw1LbMGl7diu5a/b+u+sfmcXvqhY7Wm07lhV3lFtBa3MdXi7FYW4fvs7zSX3sCrwHpVibiT/Ozuj/8kvi/pYFVMtgkREVEREBERAREQEREBERAREQEREBERAXy94AJJAA1JOgAHNeTF8VgpIjNO8Rxt6TzJ6A0DVzj1BUvtltvNXkxMzQ0ngflydshH3Rp49LdsOC2Se3h1xYpvOko2u3kAXhoSHHk6e12jyYPyvpHTqvzVbvkfI4ucXPe46kkuc4nrJ1JXdg+FT1cgigYZHdPgtHW49AVwbH7Dw0QEklpqjnmI7ln0Aft5+Ja7TjwRqPL6XFyOP8ADsfyxu0/vP6/RFNkt3kk1pqvNFHzEfKRw7T+QPb4lOpsWoMPkgoG5I5JnBsULAM2p1eR0N53J568yozvI3lR0GalpsstbbuidY4L8s3hP6m+k9AdUuw9VJNjVLNK90sr6hpc9xu5xseZ9Q6gAByWLJltee7wuZzs3Lt1ZJ7e0e0NoERFzYha/b+u+rPM4vfVC2BWv2/rvrH5nF76oRMK6Vibh++zvNJfewKu1Ym4fvs7zSX3sCJlsEiIioiIgIiICIiAiIgIiICIiAiLyyVZEzYeHIQ5j3cQAcNuUsGUm97nNpp+SUH1V1kcWXO5rc72sbcgXc7kB2rqxfE4qWB9RK7LGwXPWegADpJJAHaV84nhFPU5OLFFLke17czGus5p0IuNFWm+PFDxIqFujGN4rgNAXOJawegB/wCsF1w4/UvFVqV6p0h20+0M9fMZpTZouI4we4jb1Drcek9PYAAOzZXZmoxCXJGMsbSOJIR3DB/E7qH2DVc7JbNTYjNw2XZE2xkktowdQ63noHp6FfWFYZDSxNghaGRtGg6Sekk9JPSVvz54xR0U8/00XyRTtV59n8CgoYRDC2w5ucdXvPW4/wDoCi+97amow6kZ8Hs2Sd5j4nTGMhcS0eEbadSnihm9nZ51dhr2xtLpoXCaNo5uLQ4PaOsljn2HXZeZMzM7lmmZmdy1scSSSSSSSSSbkk6kknmSVId3ffaj8u37Co6DdSLd332o/Lt+wqEtpUREVFr9v676x+Zxe+qFsCtf9/XfWPzOL31QiYVyrE3Dj+dn+aS+9gVdq6tweAPZHNiD25RLaOG41LGkmR3ic6wHk79IRMrcRERUREQEREBERAREQEREBERAXRVVGRubK9/Y1uZ3qXeiCL7D7SGtgc90FTERNO0cSItFhM/KL9bRZrupzXDoVe7e4ZNU40aeMXfKIst+Qbwxmcf0RZ5PiVyUlO2Npa0WBc9/pke6R3tcV5/9lw/CTWZRxzEIs36AcX2HpPsC64cvpzM/ZelumdurZ3BIaGnbTxDQaucflPcflOd2n2AAcgFk1wuVzmZmdypM7ERFAqrb/dMKmR1VQuZFM4lz4XXEL3HUua4XyOPToQT1akwzZDY/E6XFKR09FOxrZwS8ND4wLG5c+MloHaStiFwiduUREQKkd8uztdV4pG6npZ52/BY25msPDDhLOSC82aDYg6npCu5EFH7H7nJnubLiJEUQ14DH3lf2PkbowfRJPaFdkELI2tjY1rGNAa1oFmtAFgAByAC7EQEREBFwuUBEuiAiIgIiICIiAiIgIiICgu8va6ahEcFPlbLIHOLyA7I0GwsDpmJvzuNOWuk6VO75vnsPkB7x678asWyREumKIm3d4n7V41ScGeSfiMnZxGNe1jmubfpsAW9HIjmrhwXEBU08VQBlEsbX26ri5F+w6KBfFKLEKGge+pFOWUrABlac1w031cOpTrZ+gbTUsVO1/EbG0ND7AZu2wJV+RakxGo77Tkmsx28qkxDa3F3V0tLDVOF6mSKNvDgt/SljBdzPENSszsRtvXPrhRVZbJmL475GNeyRgcdSywIu0jlzI1UMrJZWYrI+JofM2tkLGkXDnidxaLAi9zbpCy+72JkuLCSeQRTiSV4jyEZ5CH523/JsS42Ovc2WvJjp0T2jw7WrHT49lqbaVksFBPNE4slYy7XWBscwHJwI9YVUYZtLtBVZhTzyzOYASGxU2l725sHUVaG8LvZU/QH3mqnNlsarqQyuo4uK5zWhw4L5bAZi3RnLUlceNWJxzOomd+6mKPlns2Aps2Rub5WUX8dtfaqUxvbnExVTtiqnMibNKGtEUJDWNeWt1LCeVuZV1yS5WF55BpcfQLla94BTGdlZI7XLSPkP0uLE/wCwOVOJWs9U2jfhXFEd5lcW7vFpaugZLM/iTB8jXOs0E2eS3RoAHclvQsFvFr8Ygm4lK6RlI2FrnuDIXND8z8xJe0u5ZOxfG5WpvT1EXgytf6HsDf4CpRt73tqvJO/cqzqmeY17/wBon5bqrw7abaCqzNp55ZnNbchsVNpfQc2DpVv7RVD4qKolY4tkZBK9rrAkObGSDYix161W+5b5xUeSZ95WLtf3vq/Np/duVuRr1YrER2Tk11a0g+7Daauq6x8VRUOmYIHODSyJtnB8YBuxoPIn1r071MdrqOSA087oWSMkuAyNwLmFuvdtJ5OHqWA3NfP5PNn+8iUi3z02akhltqybKewPY797Wq9q1jkRGuy0xHqaYjGNsq1uF0UzKhzaiV0wkfkiJcInFnItLRzbyAUv3a4hU1NFx6iUzPdK/KS1jbNbZtrMAHyg71qna+pzUVLH/Zvqv8zonf6q6t3lPw8Mph4TC/8AaOdJ/EnIpWmPtHfc/wCzJERX8q82n2uxSPEJqeGpe1olyMYI4TzsAAXMJ5npKnmwEmJuil/2hxOJnGTO2Npy5Re3DAHO/NVRtdI5uKzvYLvbUBzRa93AtLRYc9bK2dgcXrKuCSSrj4UjZS1o4T47tyMN7P1Opdr2JnrEYo1Ee36mSNUjUJQiIsDOIiICIiAiIgIiICqXfTSOE1PPY5Cx0d+gODswHjIJ/VPUraXTVU0crDHIxkjHc2uaHNPjB0K64cnp3iy1LdM7a/7R4pFUQUUTA4ugpxG+7fy7gWHXy9oV27H0b4KCmie3K9sTMzelpIuQe0Xsvui2aoIXiSKlgjkHJwjbmHiPR6Fll0zZovWK1jste8TGoUHT9/B/xE/9SV37O9/h55UfelVwjZ2hEnHFJTCbPn4nBZxM982bNa+a+t1zFs/RMl47aWmbNmLuIIWCTMb5jmAvc3PrXSeVExPb20vOWP4eDeF3sqfoD7zVVGwe1MeGvme+N8okawDKQLZS4638avOrpo5WGORjZI3CzmuaHNI7QdCsX8UsM/uFF9Xj/CueLNWtJpaPKtLxFdS6dosRvhU1S27c9K5zb8wZI+59N3BUrs/hlVOyoMEvDbHC58ozvbxGAG7LNHdXsdDotgZqCF8XAdFG6GwbwywGPKLWGU6WFh6l0UWB0cAcIqaniDxlfkiY3MNdHWGo1PPrTFnjHWYiPJTJ0xKr9y9Taqni8OEO/ZvA/wC4rB29721XknfuXtoMBoqd/EhpaeF9iMzImMdY8xdo5aD1L21VOyVhjkY2SNws5rgC1w6iDoQq5MsWydcR9EWvE22qjct84qPJM+8rF2v731fm0/u3L0YfgtJTkugp4IC4WJjiawkDkDlGq9dRCyRro3ta9jgWua4AtcCLEEHmCFGXLF8nWi1t22p7c18/k82f7yJTzebS8TC57c25Hj/DI0u/y5lmMPwOjp3F8FNTwPIyl0cTGOIuDa7RyuB6l7amBkjHRva17HAhzXAFrgdCCDoQrZM0WyxePsm1926msL3nLboFz6wL/YFsthFLwaeKLwIo2fqtA/cvD8U8M/uNH9Xj/Cs0rcjPGXURCcmSLeFAbVTCPF5pCCQypDyOk5XNdb2K3NkNrI8SEhZE+LhZL5i03z5rWt9Fe2p2aw+V5kko6WR7jdznQRucT1kkXJXpw7CaamzCCCGDNbNw42szWva+UC9rn1qMual6RGu8FrxaNPaiIszkIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiD/2Q==" alt="Digital Innovations">
+                                        <div class="premium-badge">
+                                            <span>🏆</span>
+                                            Premium
+                                        </div>
+                                    </div>
+                                    <div class="sponsor-info">
+                                        <h3>Husanbek Suyunov</h3>
+                                        <p class="sponsor-category">Full stack Python dasturchi</p>
+                                        <p class="sponsor-description">Raqamli innovatsiyalar va startup loyihalar</p>
+                                        <div class="sponsor-stats">
+                                            <div class="stat">
+                                                <span>⭐</span>
+                                                <span>5/5 reyting</span>
+                                            </div>
+                                            <div class="stat">
+                                                <span>👥</span>
+                                                <span>100+ loyiha</span>
+                                            </div>
+                                        </div>
+                                        <a href="https://husanbek-coder.uz" class="sponsor-link">Saytga o'tish →</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sponsor 3 -->
+                            <div class="slide">
+                                <div class="sponsor-content">
+                                    <div class="sponsor-logo">
+                                        <img src="https://yt3.googleusercontent.com/fQbplCx_37cYOJ5DJ4KM972qYhx5mS8bx0U1SEKqDBErUoQRKWm93LqxteKyW6SgPOpy7I1-=s900-c-k-c0x00ffffff-no-rj" alt="Creative Studio Pro">
+                                        <div class="premium-badge">
+                                            <span>🏆</span>
+                                            Premium
+                                        </div>
+                                    </div>
+                                    <div class="sponsor-info">
+                                        <h3>IT Shaharcha</h3>
+                                        <p class="sponsor-category">Academy</p>
+                                        <p class="sponsor-description">Raqamli o`shish, rivojlanish markazi</p>
+                                        <div class="sponsor-stats">
+                                            <div class="stat">
+                                                <span>⭐</span>
+                                                <span>5/5 reyting</span>
+                                            </div>
+                                            <div class="stat">
+                                                <span>👥</span>
+                                                <span>20+ loyiha</span>
+                                            </div>
+                                        </div>
+                                        <a href="https://zominai.uz/" class="sponsor-link">Saytga o'tish →</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sponsor 4 -->
+                            <div class="slide">
+                                <div class="sponsor-content">
+                                    <div class="sponsor-logo">
+                                        <img src="https://images.seeklogo.com/logo-png/49/1/yoshlar-ishlari-agentligi-logo-png_seeklogo-491676.png" alt="Future Systems">
+                                        <div class="premium-badge">
+                                            <span>🏆</span>
+                                            Premium
+                                        </div>
+                                    </div>
+                                    <div class="sponsor-info">
+                                        <h3>Yoshlar ishlari egentligi</h3>
+                                        <p class="sponsor-category">Company</p>
+                                        <p class="sponsor-description">Yoshlar uchun start-up inkubatori</p>
+                                        <div class="sponsor-stats">
+                                            <div class="stat">
+                                                <span>⭐</span>
+                                                <span>5/5 reyting</span>
+                                            </div>
+                                            <div class="stat">
+                                                <span>👥</span>
+                                                <span>12+ loyiha</span>
+                                            </div>
+                                        </div>
+                                        <a href="https://yoshlarplatformasi.uz/" class="sponsor-link">Saytga o'tish →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Arrows -->
+                        <button class="slider-arrow prev" id="prevSlide">‹</button>
+                        <button class="slider-arrow next" id="nextSlide">›</button>
+                    </div>
+
+                    <!-- Slide Indicators -->
+                    <div class="slide-indicators" id="slideIndicators">
+                        <button class="indicator active" data-slide="0"></button>
+                        <button class="indicator" data-slide="1"></button>
+                        <button class="indicator" data-slide="2"></button>
+                        <button class="indicator" data-slide="3"></button>
+                    </div>
+
+                    <!-- Auto-play Control -->
+                    <div class="autoplay-control">
+                        <button id="autoplayToggle" class="autoplay-btn active">
+                            Avtomatik o'tish yoqilgan
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Thank You Message -->
+                <div class="thank-you-message">
+                    <h3>Rahmat!</h3>
+                    <p>
+                        Barcha homiylarimizga katta rahmat! Sizlarning qo'llab-quvvatlashingiz tufayli 
+                        yangi loyihalar yaratish va rivojlanishda davom etishim mumkin.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Bog'lanish</h2>
+                    <p class="section-description">
+                        Loyiha haqida gaplashish yoki hamkorlik qilish uchun menga murojaat qiling
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Aloqa ma'lumotlari</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <p>Email</p>
+                                    <a href="uzbuzb314@gmail.com">uzbuzb314@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div class="contact-details">
+                                    <p>Telefon</p>
+                                    <a href="+998885238393">+998 88 523 83 93</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><img src="logo/location.png" alt="" height="35px" style="margin-top: 7px;"></div>
+                                <div class="contact-details">
+                                    <p>Manzil</p>
+                                    <span>Zomin, Jizzax, O'zbekiston</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h4>Ijtimoiy tarmoqlar</h4>
+                            <div class="social-icons">
+                                <a href="https://github.com/shohjahon20110203" target="_blank" title="GitHub">
+                                    <span><img src="logo/github-logo.png" alt="" height="35px" style="margin-top: 9px;"></span>
+                                </a>
+                                <a href="https://t.me/shohjahon2011_blog" target="_blank" title="Telegram">
+                                    <span><img src="logo/telegram-logo.webp" alt="" height="35px" style="margin-top: 9px;"></span>
+                                </a>
+                                <a href="https://instagram.com/shohjahon2011_blog" target="_blank" title="Instagram">
+                                    <span><img src="logo/instagram-logo.avif" alt="" height="35px" style="margin-top: 9px;"></span>
+                                </a>
+                                <a href="https://youtube.com/@whoh_vines" target="_blank" title="Telegram">
+                                    <span><img src="logo/youtube-logo.png" alt="" height="35px" style="margin-top: 9px;"></span>
+                                </a>
+                                <a href="#" target="_blank" title="YouTube">
+                                    <span><img src="logo/facebook-logo.png" alt="" height="35px" style="margin-top: 9px;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Xabar yuborish</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Ismingiz</label>
+                                <input type="text" id="name" name="name" required placeholder="Ismingizni kiriting">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="emailingiz@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Xabar</label>
+                                <textarea id="message" name="message" required rows="5" placeholder="Xabaringizni yozing..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <span>📤</span>
+                                Xabar yuborish
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Shohjahon.uz</div>
+                    <p>
+                        Web dasturlash va dizayn sohasida professional xizmatlar. 
+                        Har bir loyihani muhabbat bilan yarataman.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Tez havolalar</h4>
+                    <ul>
+                        <li><a href="#home">Bosh sahifa</a></li>
+                        <li><a href="#about">Men haqimda</a></li>
+                        <li><a href="#skills">Malakalar</a></li>
+                        <li><a href="#sponsors">Homiylar</a></li>
+                        <li><a href="#contact">Aloqa</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Bog'lanish</h4>
+                    <div class="footer-contact-info">
+                        <p>uzbuzb314@gmail.com</p>
+                        <p>+998 88 523 83 93</p>
+                        <p>Zomin, Jizzax, O'zbekiston</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>© 2025 Shohjahon.uz. Barcha huquqlar himoyalangan.</p>
+                    <div class="footer-made-with">
+                        <span>Ishlab chiqilgan</span>
+                        <span class="heart">❤️</span>
+                        <span>va</span>
+                        <span class="code">💻</span>
+                        <span>bilan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <span><img src="logo/arrow-point.png" alt="" height="35px" style="margin-top: 9px;"></span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
